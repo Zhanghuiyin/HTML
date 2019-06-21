@@ -1,0 +1,35 @@
+1. 计算指定选择器的优先级:CSS的权重关系
+！importent     span{
+                          font-size:30px  !important
+                        }                                     100000
+    内联样式         <span style="font-size:50px"> </span>     10000
+    id选择器                                                   1000
+    类选择器                                                    100
+    标签选择器                                                   10
+    ＊通配符选择器                                                 1
+-->
+2. margin :0 auto (水平居中)和postion:定位冲突
+
+但是又想定位又想居中怎么实现？
+position: absolute;
+bottom:10px;
+left:50%;
+margin-left:-174px;(上面宽度的一半)
+3.一个标签可以有很多个类（设置很多个类名）
+      <div class="text-info clear-fix">
+
+      </div>
+      text-info clear-fix 是两个类名，中间加空格   
+4. <input type="text" placeholder="邮箱登录扫码登录">         
+   其中“邮箱登录扫码登录”文字颜色不能用color控制
+5.鼠标移入变颜色 
+a :hover{
+  color:red;
+}
+6. ul:nth-child(1){
+}
+代表父级里面第几个元素
+7.定位和浮动都会导致脱离文档流，
+所以当一个元素写完影响之前写过当元素位置时，但是还不得不写，就得让这个元素进行定位脱离文档流；
+8.background-image 设置高宽要先变成块级元素display:block;
+<img src="" alt="">不用 
